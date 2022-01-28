@@ -30,7 +30,7 @@ body {
 
 #logo {
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   padding: 10px;
   text-align: start;
   justify-content: left;
@@ -55,17 +55,18 @@ body {
 .prof-card {
   width: 350px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 70px;
 }
 
 .card-head {
   background: #2c394b;
   border-radius: 25px;
   padding: 40px 40px;
-  margin-top: 70px;
+  margin-top: 30px;
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
 section {
   padding: 10px;
   margin: 10px;
@@ -206,9 +207,9 @@ button {
 footer {
   flex-direction: column;
   flex: content;
-  text-align: center;
+  text-align: left;
   text-justify: auto;
-  padding: 25px;
+  padding-top: 80px;
   margin: 25px;
   width: 100%;
 }
@@ -249,88 +250,6 @@ input[type="submit"]:hover {
   background-color: #74c69d;
 }
 
-/* Kebab button */
-.header {
-  width: 100%;
-  height: 60px;
-}
-
-.showLeft {
-  text-shadow: none !important;
-  color: #fff;
-  padding: 10px;
-}
-
-.icons li {
-  background: none repeat scroll 0 0 #787a91;
-  height: 7px;
-  width: 7px;
-  line-height: 0;
-  list-style: none outside none;
-  margin-right: 25px;
-  margin-top: 8px;
-  vertical-align: top;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.btn-left {
-  left: 0.4em;
-}
-
-.btn-right {
-  right: 0.4em;
-}
-
-.btn-left,
-.btn-right {
-  position: absolute;
-  top: 0.24em;
-}
-
-.dropbtn {
-  position: fixed;
-  /* color: white; */
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  color: #b7e4c7;
-}
-
-.dropdown {
-  position: absolute;
-  display: inline-block;
-  right: 0.4em;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  margin-top: 5px;
-  min-width: 160px;
-  overflow: auto;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  /* color: black; */
-  padding: 5px 3px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  color: #74c69d;
-}
-
-.show {
-  display: block;
-}
-
 input {
   color: #1b4332;
 }
@@ -349,20 +268,6 @@ textarea {
   margin-right: 8px;
 }
 
-#btn {
-  font-size: 15px;
-  text-align: center;
-  padding: 5px;
-  margin: 22px;
-  color: #787a91;
-
-  position: relative;
-
-  cursor: pointer;
-
-  /* position: absolute; */
-}
-
 #btn:hover {
   color: #74c69d;
 }
@@ -370,67 +275,33 @@ textarea {
 /* mobile */
 @media only screen and (max-width: 600px) {
   body {
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
     line-height: 30px;
     align-items: center;
     justify-content: center;
-    color: #d8f3dc;
-    background-size: cover;
     text-align: center;
   }
   header {
-    width: 75%;
     font-size: 20px;
     line-height: 40px;
-    justify-content: center;
   }
+
   #logo {
-    padding-left: 60px;
-  }
-  .dropbtn {
-    display: none;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
   }
 
-  .dropdown-content {
+  #myDropdown {
+    align-items: center;
+    text-align: center;
     display: flex;
+    padding: 10px;
+    text-decoration: none;
     justify-content: center;
-    text-align: center;
-  }
-
-  .section {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin-left: 10px;
-    padding-left: 10px;
   }
 
   .thm-toggle {
     display: none;
-  }
-
-  #btn {
-    display: none;
-  }
-
-  .education {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .skills {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .projects {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
   }
 
   .card-head {
@@ -442,17 +313,14 @@ textarea {
     width: 350px;
     text-align: center;
     border-radius: 70px;
-    padding-left: 60px;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    margin: 30px;
   }
-  a {
-    text-align: center;
-    justify-content: center;
-  }
+
   footer {
     flex-direction: column;
     flex: content;
@@ -461,14 +329,5 @@ textarea {
     padding: 10px;
     margin: 0px;
     width: 100%;
-  }
-  .dropdown-content a {
-    padding: 10px;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-right: 30px;
-    padding-right: 20px;
   }
 }

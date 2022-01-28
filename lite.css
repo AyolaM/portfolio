@@ -6,6 +6,7 @@
   color: #d8f3dc;
   font-family: "Quattrocento Sans", sans-serif;
   list-style-type: none;
+  /* border: 1px solid #1b4332; */
 }
 
 body {
@@ -30,20 +31,12 @@ body {
 
 #logo {
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   padding: 10px;
   text-align: start;
   justify-content: left;
 }
 
-#navbar {
-  display: flex;
-  flex-direction: row;
-  flex: content;
-  justify-content: center;
-  padding: 5px;
-  margin: 5px;
-}
 
 .container {
   display: grid;
@@ -54,6 +47,7 @@ body {
   width: 350px;
   text-align: center;
   border-radius: 70px;
+  justify-content: center;
 }
 
 .card-head {
@@ -139,11 +133,7 @@ body {
   background: #66424c;
 }
 
-/* #container {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-} */
+
 #nav {
   display: flex;
   flex-direction: row;
@@ -195,9 +185,9 @@ button {
 footer {
   flex-direction: column;
   flex: content;
-  text-align: center;
+  text-align: left;
   text-justify: auto;
-  padding: 25px;
+  padding-top: 80px;
   margin: 25px;
   width: 100%;
 }
@@ -239,7 +229,7 @@ input[type="submit"]:hover {
 }
 
 /* Kebab button */
-.header {
+/* .header {
   width: 100%;
   height: 60px;
 }
@@ -248,9 +238,9 @@ input[type="submit"]:hover {
   text-shadow: none !important;
   color: #fff;
   padding: 10px;
-}
+} */
 
-.icons li {
+/* .icons li {
   background: none repeat scroll 0 0 #b7e4c7;
   height: 7px;
   width: 7px;
@@ -261,9 +251,9 @@ input[type="submit"]:hover {
   vertical-align: top;
   border-radius: 50%;
   pointer-events: none;
-}
+} */
 
-.btn-left {
+/* .btn-left {
   left: 0.4em;
 }
 
@@ -280,11 +270,11 @@ input[type="submit"]:hover {
 .dropbtn {
   position: fixed;
   /* color: white; */
-  font-size: 16px;
+/* font-size: 16px;
   border: none;
   cursor: pointer;
-}
-
+} */
+/* 
 .dropbtn:hover,
 .dropbtn:focus {
   color: #b7e4c7;
@@ -303,22 +293,22 @@ input[type="submit"]:hover {
   min-width: 160px;
   overflow: auto;
   z-index: 1;
-}
+} */
 
-.dropdown-content a {
+/* .dropdown-content a {
   /* color: black; */
-  padding: 5px 3px;
+/* padding: 5px 3px;
   text-decoration: none;
   display: block;
-}
+} */
 
-.dropdown a:hover {
+/* .dropdown a:hover {
   color: #74c69d;
 }
 
 .show {
   display: block;
-}
+}  */
 
 input {
   color: #1b4332;
@@ -328,19 +318,6 @@ textarea {
   color: #1b4332;
 }
 
-#btn {
-  font-size: 15px;
-  text-align: center;
-  padding: 5px;
-  margin: 22px;
-  color: #d8f3dc;
-
-  position: relative;
-
-  cursor: pointer;
-
-  /* position: absolute; */
-}
 
 #btn:hover {
   color: #74c69d;
@@ -386,18 +363,6 @@ textarea {
     text-decoration: none;
     justify-content: center;
   }
-  .dropbtn {
-    display: none;
-  }
-
-  .dropdown-content {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #btn {
-    display: none;
-  }
 
   .thm-toggle {
     display: none;
@@ -417,6 +382,7 @@ textarea {
   .container {
     display: flex;
     flex-direction: column;
+    margin: 30px;
   }
 
   footer {
@@ -427,13 +393,5 @@ textarea {
     padding: 10px;
     margin: 0px;
     width: 100%;
-  }
-  .dropdown-content a {
-    padding: 10px;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-right: 10px;
   }
 }
