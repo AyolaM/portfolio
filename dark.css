@@ -25,6 +25,7 @@ body {
   color: #334756;
   background-size: cover;
   text-align: center;
+  font-size: 24px;
 }
 
 #logo {
@@ -49,6 +50,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
+  line-height: 28px;
 }
 .prof-card {
   width: 350px;
@@ -108,7 +110,8 @@ section {
 }
 .descr {
   font-size: 18px;
-  color: #787a91;
+  color: #74c69d;
+  font-size: 22px;
 }
 
 .sm {
@@ -168,6 +171,10 @@ a:hover {
 
 .name {
   text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 15px 0px;
+  margin: 10px 0px;
 }
 .card {
   text-align: center;
@@ -343,15 +350,15 @@ textarea {
 }
 
 #btn {
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   padding: 5px;
-  margin: 8px;
-  color: #d8f3dc;
-  /* background-color: none; */
+  margin: 22px;
+  color: #787a91;
+
+  position: relative;
+
+  cursor: pointer;
 
   /* position: absolute; */
 }
@@ -361,24 +368,26 @@ textarea {
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     width: 100%;
-    margin: 10px;
-    padding: 10px;
-    line-height: 20px;
-    height: 100vh;
-    display: flow-root;
+    margin: 20px;
+    padding: 20px;
+    line-height: 30px;
     align-items: center;
     justify-content: center;
-    color: #334756;
+    color: #d8f3dc;
     background-size: cover;
     text-align: center;
   }
   header {
-    width: 100%;
+    width: 75%;
     font-size: 20px;
     line-height: 40px;
+    justify-content: center;
+  }
+  #logo {
+    padding-left: 60px;
   }
   .dropbtn {
     display: none;
@@ -386,14 +395,24 @@ textarea {
 
   .dropdown-content {
     display: flex;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
   }
 
   .section {
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .thm-toggle {
+    display: none;
+  }
+
+  #btn {
+    display: none;
   }
 
   .education {
@@ -419,17 +438,37 @@ textarea {
     text-align: center;
     justify-content: center;
   }
-}
+  .prof-card {
+    width: 350px;
+    text-align: center;
+    border-radius: 70px;
+    padding-left: 60px;
+  }
 
-.thm-toggle {
-  border: none;
-  background-color: none;
-  text-align: center;
-  border-radius: 50%;
-  /* justify-content: end; */
-  /* width: 50px; */
-  height: 30px;
-  font-size: 10px;
-  /* padding-top: 5px;
-  margin-right: 5px; */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    text-align: center;
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+    flex: content;
+    text-align: center;
+    text-justify: auto;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+  }
+  .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 30px;
+    padding-right: 20px;
+  }
 }

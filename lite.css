@@ -15,9 +15,10 @@ body {
     rgba(64, 145, 108, 1) 60%,
     rgba(45, 106, 79) 100%
   );
+  font-size: 24px;
   margin: 20px;
   padding: 20px;
-  line-height: 20px;
+  line-height: 28px;
   height: 100vh;
   display: grid;
   align-items: center;
@@ -40,7 +41,6 @@ body {
   flex-direction: row;
   flex: content;
   justify-content: center;
-  text-align: end;
   padding: 5px;
   margin: 5px;
 }
@@ -53,20 +53,16 @@ body {
 .prof-card {
   width: 350px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 70px;
 }
 
 .card-head {
   background: #74c69d;
   border-radius: 25px;
   padding: 40px 40px;
-  margin-top: 70px;
+  margin-top: 30px;
   grid-column: 1/2;
   grid-row: 1/2;
-}
-section {
-  padding: 10px;
-  margin: 10px;
 }
 
 .pic {
@@ -80,7 +76,7 @@ section {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   padding: 15px 0px;
   margin: 10px 0px;
@@ -143,16 +139,16 @@ section {
   background: #66424c;
 }
 
-#container {
+/* #container {
   display: grid;
   justify-content: center;
   align-content: center;
-}
+} */
 #nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  flex-wrap: nowrap; /*items won`t wrap, will instead resize to fit */
+  flex-wrap: wrap; /*items won`t wrap, will instead resize to fit */
 }
 
 a:hover {
@@ -333,17 +329,14 @@ textarea {
 }
 
 #btn {
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   padding: 5px;
-  margin: 8px;
+  margin: 22px;
   color: #d8f3dc;
-  background-color: none;
+
   position: relative;
-  /* color: white; */
+
   cursor: pointer;
 
   /* position: absolute; */
@@ -367,24 +360,31 @@ textarea {
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    line-height: 20px;
-    height: 100vh;
-    display: flow-root;
+    line-height: 30px;
     align-items: center;
     justify-content: center;
-    color: #d8f3dc;
-    background-size: cover;
     text-align: center;
   }
   header {
-    width: 100%;
     font-size: 20px;
     line-height: 40px;
+  }
+
+  #logo {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #myDropdown {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
   }
   .dropbtn {
     display: none;
@@ -392,37 +392,48 @@ textarea {
 
   .dropdown-content {
     display: flex;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
+  }
+  #btn {
+    display: none;
   }
 
-  .section {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .education {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .skills {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .projects {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
+  .thm-toggle {
+    display: none;
   }
 
   .card-head {
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+  .prof-card {
+    width: 350px;
+    text-align: center;
+    border-radius: 70px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    flex: content;
+    text-align: center;
+    text-justify: auto;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+  }
+  .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
   }
 }
